@@ -42,10 +42,10 @@ Row 2   [   1       4        -1     ]
         Order: 2×3
 ```
 
-### Example:
+### Example: 2×3 Matrix
 $$A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}$$
 
-This is a 2×3 matrix with 6 elements.
+This is a 2×3 matrix (2 rows, 3 columns) with 6 total elements.
 
 ---
 
@@ -54,26 +54,31 @@ This is a 2×3 matrix with 6 elements.
 ### 1. **Row Matrix**
 A matrix with only one row (1×n matrix).
 
-$$A = \begin{bmatrix} 2 & 5 & -3 & 7 \end{bmatrix}$$ (1×4 matrix)
+**Row Matrix A (1×4):**
+$$A = \begin{bmatrix} 2 & 5 & -3 & 7 \end{bmatrix}$$
 
 ### 2. **Column Matrix**
 A matrix with only one column (m×1 matrix).
 
-$$B = \begin{bmatrix} 3 \\ 7 \\ -2 \end{bmatrix}$$ (3×1 matrix)
+**Column Matrix B (3×1):**
+$$B = \begin{bmatrix} 3 \\ 7 \\ -2 \end{bmatrix}$$
 
 ### 3. **Square Matrix**
 Number of rows = Number of columns (n×n matrix).
 
-$$C = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$$ (2×2 matrix)
+**Square Matrix C (2×2):**
+$$C = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$$
 
 ### 4. **Diagonal Matrix**
 A square matrix where all non-diagonal elements are zero.
 
+**Diagonal Matrix D (3×3):**
 $$D = \begin{bmatrix} 5 & 0 & 0 \\ 0 & 3 & 0 \\ 0 & 0 & 2 \end{bmatrix}$$
 
 ### 5. **Identity Matrix (I)**
 A diagonal matrix where all diagonal elements are 1.
 
+**Identity Matrix (3×3):**
 $$I_3 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
 
 **Property:** A·I = A for any matrix A
@@ -81,29 +86,36 @@ $$I_3 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
 ### 6. **Null/Zero Matrix**
 All elements are zero.
 
+**Null Matrix O (2×2):**
 $$O = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}$$
 
 ### 7. **Triangular Matrices**
 
-**Upper Triangular:**
-$$U = \begin{bmatrix} 2 & 3 & 5 \\ 0 & 1 & 4 \\ 0 & 0 & 6 \end{bmatrix}$$ (All elements below diagonal are 0)
+**Upper Triangular U (3×3):**
+- All elements below the diagonal are zero
+$$U = \begin{bmatrix} 2 & 3 & 5 \\ 0 & 1 & 4 \\ 0 & 0 & 6 \end{bmatrix}$$
 
-**Lower Triangular:**
-$$L = \begin{bmatrix} 3 & 0 & 0 \\ 2 & 5 & 0 \\ 1 & 4 & 7 \end{bmatrix}$$ (All elements above diagonal are 0)
+**Lower Triangular L (3×3):**
+- All elements above the diagonal are zero
+$$L = \begin{bmatrix} 3 & 0 & 0 \\ 2 & 5 & 0 \\ 1 & 4 & 7 \end{bmatrix}$$
 
 ### 8. **Symmetric Matrix**
-$$A^T = A$$ (Transpose equals the original matrix)
+Where $A^T = A$ (Transpose equals the original matrix)
 
+**Symmetric Matrix S (3×3):**
 $$S = \begin{bmatrix} 1 & 2 & 3 \\ 2 & 5 & 4 \\ 3 & 4 & 7 \end{bmatrix}$$
 
-Notice: $a_{ij} = a_{ji}$
+**Property:** Notice that $a_{ij} = a_{ji}$ (elements are symmetric about diagonal)
 
 ### 9. **Skew-Symmetric Matrix**
-$$A^T = -A$$ (Transpose equals negative of original)
+Where $A^T = -A$ (Transpose equals negative of original)
 
+**Skew-Symmetric Matrix K (3×3):**
 $$K = \begin{bmatrix} 0 & 2 & -3 \\ -2 & 0 & 4 \\ 3 & -4 & 0 \end{bmatrix}$$
 
-**Property:** All diagonal elements are 0, and $a_{ij} = -a_{ji}$
+**Properties:** 
+- All diagonal elements are 0
+- Elements satisfy $a_{ij} = -a_{ji}$
 
 ### 10. **Orthogonal Matrix**
 $$A^T·A = I$$
