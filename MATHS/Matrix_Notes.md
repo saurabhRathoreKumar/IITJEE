@@ -172,9 +172,15 @@ For multiplication A(m×n) × B(n×p), result is C(m×p).
 
 $$c_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
 
-**Example:**
-$$\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \times \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} = \begin{bmatrix} 1(5)+2(7) & 1(6)+2(8) \\ 3(5)+4(7) & 3(6)+4(8) \end{bmatrix}$$
+**Example: Multiply Two 2×2 Matrices**
 
+**Step 1: Setup the multiplication**
+$$\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \times \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix}$$
+
+**Step 2: Calculate each element**
+$$= \begin{bmatrix} 1(5)+2(7) & 1(6)+2(8) \\ 3(5)+4(7) & 3(6)+4(8) \end{bmatrix}$$
+
+**Step 3: Final Result**
 $$= \begin{bmatrix} 19 & 22 \\ 43 & 50 \end{bmatrix}$$
 
 **Properties:**
@@ -187,7 +193,13 @@ $$= \begin{bmatrix} 19 & 22 \\ 43 & 50 \end{bmatrix}$$
 
 Interchanging rows and columns.
 
-$$A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix} \Rightarrow A^T = \begin{bmatrix} 1 & 4 \\ 2 & 5 \\ 3 & 6 \end{bmatrix}$$
+**Original Matrix A (2×3):**
+$$A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}$$
+
+**Transposed Matrix A^T (3×2):**
+$$A^T = \begin{bmatrix} 1 & 4 \\ 2 & 5 \\ 3 & 6 \end{bmatrix}$$
+
+*Note: Rows become columns and columns become rows*
 
 **Properties:**
 - $(A^T)^T = A$
@@ -454,8 +466,13 @@ $$\text{det}(AB) = \text{det}(A) \times \text{det}(B) = (-2) \times (-2) = 4$$
 
 **Method 2: Direct Calculation**
 
-$$AB = \begin{bmatrix} 1(5)+2(7) & 1(6)+2(8) \\ 3(5)+4(7) & 3(6)+4(8) \end{bmatrix} = \begin{bmatrix} 19 & 22 \\ 43 & 50 \end{bmatrix}$$
+**Step 1: Calculate AB**
+$$AB = \begin{bmatrix} 1(5)+2(7) & 1(6)+2(8) \\ 3(5)+4(7) & 3(6)+4(8) \end{bmatrix}$$
 
+**Step 2: Simplify**
+$$AB = \begin{bmatrix} 19 & 22 \\ 43 & 50 \end{bmatrix}$$
+
+**Step 3: Calculate determinant**
 $$\text{det}(AB) = 19(50) - 22(43) = 950 - 946 = 4$$ ✓
 
 ---
@@ -478,9 +495,14 @@ $$\text{det}(A) = 2(3) - 1(1) = 6 - 1 = 5 \neq 0$$
 
 $$A^{-1} = \frac{1}{5}\begin{bmatrix} 3 & -1 \\ -1 & 2 \end{bmatrix}$$
 
+**Step 1: Multiply A⁻¹ by B**
 $$\begin{bmatrix} x \\ y \end{bmatrix} = \frac{1}{5}\begin{bmatrix} 3 & -1 \\ -1 & 2 \end{bmatrix}\begin{bmatrix} 5 \\ 5 \end{bmatrix}$$
 
-$$= \frac{1}{5}\begin{bmatrix} 15-5 \\ -5+10 \end{bmatrix} = \frac{1}{5}\begin{bmatrix} 10 \\ 5 \end{bmatrix} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$$
+**Step 2: Simplify**
+$$= \frac{1}{5}\begin{bmatrix} 15-5 \\ -5+10 \end{bmatrix}$$
+
+**Step 3: Final result**
+$$= \frac{1}{5}\begin{bmatrix} 10 \\ 5 \end{bmatrix} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$$
 
 **Answer:** x = 2, y = 1
 
